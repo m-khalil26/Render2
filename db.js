@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize')
 
 // Database
 const sequelize = new Sequelize(
-  'postgres://cloud:RJ6VAAtZMgBygY7Er2dYhxauIylApZW5@dpg-clesbkk15k1s73f5o29g-a/cloud_spou', // TODO: database connection string
+  process.env.DATABASE_URL, // TODO: database connection string
   {
     database: "cloud_spou",
     username:"cloud",
